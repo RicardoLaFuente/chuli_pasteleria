@@ -1,7 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
+}
+
+.conteiner-fluid {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -9,42 +14,37 @@ body {
         url(../imagenes/fondo\ pagina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: auto;
 }
 
-
-.imgTitulo {
-    width: 100%;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding: 0;
-    border: 0;
-
+.row {
+    --bs-gutter-x: 0;
 }
 
-
-.menu {
-    position: sticky;
-    top: 0px;
-    justify-content: center;
-    width: 90%;
-
+.menuLetras {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkgray;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    margin: 10px;
 }
 
-.menuQuieto li {
-    display: inline-block;
-    font-size: 25px;
-    margin: 5px;
-    padding: 0;
-    border-bottom: 2px groove rgb(65, 121, 115);
-    background-color: rgb(90, 165, 159);
+.envios h4 {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 30px 0px;
     color: white;
 }
 
-.menuQuieto a {
-    text-decoration: none;
+.envios p {
 
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    color: black;
 }
 
 @keyframes enviosAnime {
@@ -74,39 +74,38 @@ body {
 }
 
 .envios {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     animation-name: enviosAnime;
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
     border: 3px dotted black;
-    margin: 10px;
+    /*margin: 40px 0px;*/
     position: center;
     text-align: center;
 
 }
 
-.envios h4 {
-    font-weight: bold;
-    font-size: 50px;
-    margin: 30px 0px;
-    color: white;
-}
-
-.envios p {
-
-    font-weight: bold;
-    font-size: 20px;
-    font-family: cursive;
-    color: black;
-}
-
-article h3 {
-    color: black;
+.destacadosLetra {
+    font-size: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+}
 
+.imgCarrusel img {
+    height: 35rem;
+}
+
+.imgCarrusel {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 2rem 0;
 }
 
 article .imgChuli {
@@ -117,19 +116,39 @@ article .imgChuli {
 }
 
 article .imgChuli:hover {
-    width: 250px;
+    width: 300px;
     filter: none;
+}
+
+article h3 {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 5px;
 }
 
 .parrafoChuli {
     color: darkcyan;
     border: 1px dotted black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    padding: 5px;
+    margin: 25px 15px;
+
+}
+
+.footer {
+    background-color: #0189897a;
+    border: 2px solid black;
+}
+
+.footer h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -146,23 +165,13 @@ article .imgChuli:hover {
     margin: 10px;
 }
 
-.imgDestacados {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    color: darkolivegreen;
-}
-
-.imgDestacados img {
-    width: 200px;
-    height: 200px;
-
-}
+/* paginas catalogo */
 
 .imgCatalogo img {
     width: 300px;
     height: 300px;
-    padding: auto;
-    margin: 30px;
+    padding: 10px;
+    margin: 10px;
     border: 1px dotted coral;
 
 }
@@ -184,16 +193,18 @@ article .imgChuli:hover {
 
 }
 
+/* pagina contacto */
+
 .contacto {
-    font-size: 30px;
-    margin: 30px;
+    font-size: 20px;
+    margin: 0px;
 }
 
 .contacto h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     margin-bottom: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .contacto label {
@@ -201,110 +212,44 @@ article .imgChuli:hover {
 }
 
 .contacto input {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contactoCartel {
-    font-size: 40px;
+    font-size: 30px;
     font-style: oblique;
     color: darkslategrey;
-    margin: 10px;
     padding: center;
     border: double 3px rgb(90, 165, 159);
     text-align: center;
 }
 
-
-.principal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.1fr 1fr 0.5fr  0.1fr;
-    justify-items: stretch;
-    justify-content: stretch;
-    align-items: stretch;
-    grid-template-areas: 
-     "header header"
-     "nav nav"
-     "main main"
-     "section section"
-     "footer footer";
-}
-
-.catalogo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.1fr 0.3fr 2.5fr  0.1fr;
-    justify-items: stretch;
-    grid-template-areas: 
-     "header header"
-     "nav nav"
-     "envios envios"
-     "section section"
-     "footer footer"
-
-}
-
-header {
-    grid-area: header;
-}
-nav {
-    grid-area: nav;   
-}
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-section {
-    grid-area: section;
-}
-
-.envios {
-    grid-area: envios;
-}
-
-.articulo {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.catalogoFlex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
-
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
-}
-
-.menuQuieto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-
-@media screen and (max-width:1160px) {
-    .imgCatalogo img {
-        width: 190px;
-        height: 190px;
-    }
-
-}
-
 @media screen and (max-width:768px) {
-    .menuQuieto li {
-        font-size: 20px;
+    .parrafoChuli {
+        font-size: 17px;
+    }
+
+    .destacadosLetra {
+        font-size: 75px;
+    }
+
+    .imgCarrusel img {
+        height: 25rem;
+    }
+
+    .envios h4 {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 30px 0px;
+        color: white;
+    }
+
+    .envios p {
+
+        font-weight: bold;
+        font-size: 15px;
+        font-family: cursive;
+        color: black;
     }
 
     .imgCatalogo img {
@@ -312,134 +257,24 @@ section {
         height: 150px;
         padding: 10px;
     }
-}
 
-@media screen and (max-width:680px) {
-    .menuQuieto li {
+    .contacto {
         font-size: 20px;
     }
-
-    .imgCatalogo img {
-        width: 150px;
-        height: 150px;
-        padding: 10px;
-    }
 }
-
-
 
 @media screen and (max-width: 490px) {
-    .menuQuieto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu {
-        position: relative;
-    }
-
-
-    .imgDestacados img {
-        width: 100px;
-        height: 100px;
-
-
-    }
-
-    .imgDestacados :hover {
-        transform: scale(1.8);
-        border: solid rgb(92, 192, 135) 2px;
-    }
-
-    article .imgChuli {
-        width: 130px;
-
-    }
 
     .parrafoChuli {
-        color: darkcyan;
-        border: 1px dotted black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 10px;
-
+        font-size: 15px;
     }
 
-    .envios {
-        background-color: rgb(90, 165, 159);
-
-        border: 2px dotted black;
-        
-        position: center;
-
-
-        text-align: center;
-
+    .destacadosLetra {
+        font-size: 50px;
     }
 
-     .principal {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 1fr 0.5fr 0.1fr;
-        justify-items: stretch;
-        justify-content: stretch;
-        align-items: stretch;
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "main main"
-            "section section"
-            "footer footer";
-    }
-
-    .catalogo {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.2fr 0.1fr 0.3fr 2.5fr 0.1fr;
-        justify-items: stretch;
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "envios envios"
-            "section section"
-            "footer footer"
-
-    }
-
-    header {
-        grid-area: header;
-    }
-
-    nav {
-        grid-area: nav;
-    }
-
-    main {
-        grid-area: main;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-    section {
-        grid-area: section;
-    }
-
-    .envios {
-        grid-area: envios;
-    }
-
-    .envios {
-        background-color: rgb(90, 165, 159);
-
-        border: 3px dotted black;
-        margin: 0px;
-        position: center;
-
-
-        text-align: center;
-
+    .imgCarrusel img {
+        height: 15rem;
     }
 
     .envios h4 {
@@ -454,65 +289,20 @@ section {
         font-weight: bold;
         font-size: 10px;
         font-family: cursive;
-        color: aliceblue;
+        color: black;
+    }
+
+    .imgCatalogo img {
+        display: flex;
+        flex-direction: row;   
     }
 
     .contacto {
         font-size: 15px;
-        margin: 15px;
-    }
-
-    .contacto h3 {
-        font-size: 30px;
-        font-style: italic;
-        margin-bottom: 10px;
-        margin-top: 40px;
-    }
-
-    .contacto label {
-        display: block;
-    }
-
-    .contacto input {
-        margin-bottom: 20px;
     }
 
     .contactoCartel {
-        font-size: 30px;
-        font-style: oblique;
-        color: darkslategrey;
-        margin: 10px;
-        padding: center;
-        border: double 3px rgb(90, 165, 159);
-        text-align: center;
+        font-size: 15px;
     }
-
-    .imgCatalogo img {
-        width: 100px;
-        height: 100px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .imgCatalogo li {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 25px;
-        margin: 30px 5px 15px 5px;
-        list-style: circle;
-
-    }
-
-    .textoCatalogo {
-
-        font-family: fantasy;
-        font-size: 30px;
-        text-align: center;
-        margin: 30px 0;
-
-    }
-
-
-
-
 }
 
