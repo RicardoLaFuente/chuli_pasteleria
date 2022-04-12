@@ -1,158 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-
-}
-
-.conteiner-fluid {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-image:
-        url(../imagenes/fondo\ pagina.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-}
+  margin: 0;
+  padding: 0; }
 
 .row {
-    --bs-gutter-x: 0;
-}
+  --bs-gutter-x: 0; }
 
-.menuLetras {
-    display: flex;
-    justify-content: space-around;
-    background-color: darkgray;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: cursive;
-    color: white;
-    margin: 10px;
-}
+body {
+  background-image: url(../imagenes/fondo\pagina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto; }
+  body .container-fluid {
+    margin: 0;
+    padding: 0; }
 
-.envios h4 {
+nav div .menuLetras {
+  display: flex;
+  justify-content: space-around;
+  background-color: darkgray;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: cursive;
+  color: white;
+  margin: 10px; }
+
+@keyframes enviosAnime {
+  0% {
+    background-color: #5aa59f; }
+  20% {
+    background-color: #78c2bc; }
+  40% {
+    background-color: #96d4cf; }
+  60% {
+    background-color: #bcf3ee; }
+  80% {
+    background-color: #96d4cf; }
+  100% {
+    background-color: #78c2bc; } }
+
+.envios {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  animation-name: enviosAnime;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border: 3px dotted black;
+  /*margin: 40px 0px;*/
+  position: center;
+  text-align: center; }
+  .envios h4 {
     font-weight: bold;
     font-size: 50px;
     margin: 30px 0px;
-    color: white;
-}
-
-.envios p {
-
+    color: white; }
+  .envios p {
     font-weight: bold;
     font-size: 20px;
     font-family: cursive;
-    color: black;
-}
-
-@keyframes enviosAnime {
-    0% {
-        background-color: rgb(90, 165, 159);
-    }
-
-    20% {
-        background-color: rgb(120, 194, 188);
-    }
-
-    40% {
-        background-color: rgb(150, 212, 207);
-    }
-
-    60% {
-        background-color: rgb(188, 243, 238);
-    }
-
-    80% {
-        background-color: rgb(150, 212, 207);
-    }
-
-    100% {
-        background-color: rgb(120, 194, 188);
-    }
-}
-
-.envios {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    animation-name: enviosAnime;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-    border: 3px dotted black;
-    /*margin: 40px 0px;*/
-    position: center;
-    text-align: center;
-
-}
-
-.destacadosLetra {
-    font-size: 100px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.imgCarrusel img {
-    height: 35rem;
-}
-
-.imgCarrusel {
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    margin: 2rem 0;
-}
-
-article .imgChuli {
-    width: 200px;
-    margin-top: 5px;
-    transition: all 3s;
-    filter: grayscale(100%);
-}
-
-article .imgChuli:hover {
-    width: 300px;
-    filter: none;
-}
-
-article h3 {
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.parrafoChuli {
-    color: darkcyan;
-    border: 1px dotted black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    padding: 5px;
-    margin: 25px 15px;
-
-}
+    color: black; }
 
 .footer {
-    background-color: #0189897a;
-    border: 2px solid black;
-}
-
-.footer h2 {
+  background-color: #0189897a;
+  border: 2px solid black; }
+  .footer div h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.footer a {
+    font-family: Arial, Helvetica, sans-serif; }
+  .footer div a {
     display: inline-block;
     text-decoration: none;
     background-color: grey;
@@ -162,147 +77,134 @@ article h3 {
     border-bottom: solid black 2px;
     width: 200px;
     height: 30px;
-    margin: 10px;
-}
+    margin: 10px; }
 
-/* paginas catalogo */
+main div div .destacadosLetra {
+  font-size: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem; }
 
-.imgCatalogo img {
+main div .imgCarrusel {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 2rem 0; }
+  main div .imgCarrusel img {
+    height: 35rem; }
+
+article div h3 {
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px; }
+
+article div .imgChuli {
+  width: 200px;
+  margin-top: 5px;
+  transition: all 3s;
+  filter: grayscale(100%); }
+  article div .imgChuli:hover {
     width: 300px;
-    height: 300px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px dotted coral;
+    filter: none; }
 
-}
+article aside .parrafoChuli {
+  color: darkcyan;
+  border: 1px dotted black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 5px;
+  margin: 25px 15px; }
 
-.textoCatalogo {
+section .textoCatalogo {
+  font-family: fantasy;
+  font-size: 50px;
+  text-align: center;
+  margin: 50px 0; }
 
-    font-family: fantasy;
-    font-size: 50px;
-    text-align: center;
-    margin: 50px 0;
+section ul li {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  margin: 40px 5px 20px 5px;
+  list-style: circle; }
 
-}
-
-.imgCatalogo li {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
-    margin: 40px 5px 20px 5px;
-    list-style: circle;
-
-}
-
-/* pagina contacto */
+section ul img {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px dotted coral; }
 
 .contacto {
-    font-size: 20px;
-    margin: 0px;
-}
-
-.contacto h3 {
+  font-size: 20px;
+  margin: 0px; }
+  .contacto h3 {
     font-size: 30px;
     font-style: italic;
     margin-bottom: 20px;
-    margin-top: 50px;
-}
-
-.contacto label {
-    display: block;
-}
-
-.contacto input {
-    margin-bottom: 20px;
-}
-
-.contactoCartel {
+    margin-top: 50px; }
+  .contacto form label {
+    display: block; }
+  .contacto form input {
+    margin-bottom: 20px; }
+  .contacto .contactoCartel {
     font-size: 30px;
     font-style: oblique;
     color: darkslategrey;
     padding: center;
-    border: double 3px rgb(90, 165, 159);
-    text-align: center;
-}
+    border: double 3px #5aa59f;
+    text-align: center; }
 
-@media screen and (max-width:768px) {
-    .parrafoChuli {
-        font-size: 17px;
-    }
-
-    .destacadosLetra {
-        font-size: 75px;
-    }
-
-    .imgCarrusel img {
-        height: 25rem;
-    }
-
-    .envios h4 {
-        font-weight: bold;
-        font-size: 40px;
-        margin: 30px 0px;
-        color: white;
-    }
-
-    .envios p {
-
-        font-weight: bold;
-        font-size: 15px;
-        font-family: cursive;
-        color: black;
-    }
-
-    .imgCatalogo img {
-        width: 150px;
-        height: 150px;
-        padding: 10px;
-    }
-
-    .contacto {
-        font-size: 20px;
-    }
-}
+@media screen and (max-width: 768px) {
+  article aside .parrafoChuli {
+    font-size: 17px; }
+  main div .imgCarrusel img {
+    height: 25rem; }
+  main div .destacados .destacadosLetra {
+    font-size: 75px; }
+  .envios h4 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 30px 0px;
+    color: white; }
+  .envios p {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: cursive;
+    color: black; }
+  section ul img {
+    width: 150px;
+    height: 150px;
+    padding: 10px; }
+  .contacto {
+    font-size: 20px; } }
 
 @media screen and (max-width: 490px) {
-
-    .parrafoChuli {
-        font-size: 15px;
-    }
-
-    .destacadosLetra {
-        font-size: 50px;
-    }
-
-    .imgCarrusel img {
-        height: 15rem;
-    }
-
-    .envios h4 {
-        font-weight: bold;
-        font-size: 30px;
-        margin: 30px 0px;
-        color: white;
-    }
-
-    .envios p {
-
-        font-weight: bold;
-        font-size: 10px;
-        font-family: cursive;
-        color: black;
-    }
-
-    .imgCatalogo img {
-        display: flex;
-        flex-direction: row;   
-    }
-
-    .contacto {
-        font-size: 15px;
-    }
-
-    .contactoCartel {
-        font-size: 15px;
-    }
-}
-
+  article aside .parrafoChuli {
+    font-size: 15px; }
+  main div .imgCarrusel img {
+    height: 15rem; }
+  main div .destacados .destacadosLetra {
+    font-size: 50px; }
+  .envios h4 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0px;
+    color: white; }
+  .envios p {
+    font-weight: bold;
+    font-size: 10px;
+    font-family: cursive;
+    color: black; }
+  section ul img {
+    display: flex;
+    flex-direction: row; }
+  .contacto {
+    font-size: 15px; }
+    .contacto .contactoCartel {
+      font-size: 15px; } }

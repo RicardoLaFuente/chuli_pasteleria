@@ -1,0 +1,121 @@
+@media screen and (max-width:768px) {
+    article {
+        aside {
+            .parrafoChuli {
+                font-size: 17px;
+            }
+        }
+    }
+
+
+    main {
+        div {
+            .imgCarrusel {
+                img {
+                    height: 25rem;
+                }
+            }
+
+            .destacados {
+
+                .destacadosLetra {
+                    font-size: 75px;
+                }
+            }
+
+        }
+    }
+
+    .envios {
+        h4 {
+            font-weight: bold;
+            font-size: 40px;
+            margin: 30px 0px;
+            color: white;
+        }
+
+        p {
+
+            font-weight: bold;
+            font-size: 15px;
+            font-family: cursive;
+            color: black;
+        }
+    }
+
+    section {
+        ul {
+            img {
+                width: 150px;
+                height: 150px;
+                padding: 10px;
+            }
+        }
+    }
+
+
+    .contacto {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    article {
+        aside {
+            .parrafoChuli {
+                font-size: 15px;
+            }
+        }
+    }
+
+    main {
+        div {
+            .imgCarrusel {
+                img {
+                    height: 15rem;
+                }
+            }
+
+            .destacados {
+                .destacadosLetra {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+    .envios {
+        h4 {
+            font-weight: bold;
+            font-size: 30px;
+            margin: 30px 0px;
+            color: white;
+        }
+
+        p {
+
+            font-weight: bold;
+            font-size: 10px;
+            font-family: cursive;
+            color: black;
+        }
+    }
+
+    section {
+        ul {
+            img {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .contacto {
+        font-size: 15px;
+
+        .contactoCartel {
+            font-size: 15px;
+        }
+    }
+}

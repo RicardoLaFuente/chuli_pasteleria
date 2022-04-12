@@ -1,0 +1,59 @@
+main {
+    div {
+        div {
+            .destacadosLetra {
+                font-size: 100px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 3rem;
+            }
+        }
+
+        .imgCarrusel {
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            margin: 2rem 0;
+
+            img {
+                height: 35rem;
+            }
+        }
+    }
+}
+
+article {
+    div {
+        h3 {
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        .imgChuli {
+            width: 200px;
+            margin-top: 5px;
+            transition: all 3s;
+            filter: grayscale(100%);
+            &:hover {
+                width: 300px;
+                filter: none;
+            }
+        }
+    }
+    aside {
+        .parrafoChuli {
+            color: darkcyan;
+            border: 1px dotted black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            padding: 5px;
+            margin: 25px 15px;
+        }
+    }
+}

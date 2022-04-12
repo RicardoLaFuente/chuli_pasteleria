@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+body {
+    background-image:
+        url(../imagenes/fondo\pagina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+nav {
+    div {
+        .menuLetras {
+            display: flex;
+            justify-content: space-around;
+            background-color: darkgray;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: cursive;
+            color: white;
+            margin: 10px;
+        }
+    }
+}
+
+@keyframes enviosAnime {
+    0% {
+        background-color: rgb(90, 165, 159);
+    }
+
+    20% {
+        background-color: rgb(120, 194, 188);
+    }
+
+    40% {
+        background-color: rgb(150, 212, 207);
+    }
+
+    60% {
+        background-color: rgb(188, 243, 238);
+    }
+
+    80% {
+        background-color: rgb(150, 212, 207);
+    }
+
+    100% {
+        background-color: rgb(120, 194, 188);
+    }
+}
+
+.envios {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    animation-name: enviosAnime;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    border: 3px dotted $colornegro;
+    /*margin: 40px 0px;*/
+    position: center;
+    text-align: center;
+
+    h4 {
+        font-weight: bold;
+        font-size: 50px;
+        margin: 30px 0px;
+        color: white;
+    }
+
+    p {
+
+        font-weight: bold;
+        font-size: 20px;
+        font-family: cursive;
+        color: black;
+    }
+}
+
+.footer {
+    background-color: #0189897a;
+    border: 2px solid black;
+
+    div {
+        h2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            border-bottom: solid black 2px;
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+        }
+    }
+}

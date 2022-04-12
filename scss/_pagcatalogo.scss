@@ -1,0 +1,25 @@
+section {
+    .textoCatalogo {
+        font-family: fantasy;
+        font-size: 50px;
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    ul {
+        li {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 35px;
+            margin: 40px 5px 20px 5px;
+            list-style: circle;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px dotted coral;
+        }
+    }
+}
