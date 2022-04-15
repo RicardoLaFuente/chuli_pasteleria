@@ -1,2 +1,20 @@
 $colorblanco: white;
-$colornegro: black
+$colornegro: black;
+
+
+$redes: (
+    facebook: #1a6197,
+    whatsapp: #25d366,
+    instagram: #ee2233
+);
+
+$estilos: (
+    color: #0189897a,
+    fsize: 25px,
+    display: flex,
+);
+
+@mixin tamaños ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

@@ -46,8 +46,7 @@
     section {
         ul {
             img {
-                width: 150px;
-                height: 150px;
+                @include tamaños(150px, 150px);
                 padding: 10px;
             }
         }

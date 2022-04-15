@@ -62,7 +62,7 @@ nav {
 }
 
 .envios {
-    display: flex;
+    display: map-get($estilos, display);
     justify-content: space-around;
     flex-direction: column;
     animation-name: enviosAnime;
@@ -92,7 +92,7 @@ nav {
 }
 
 .footer {
-    background-color: #0189897a;
+    background-color: map-get($estilos, color);
     border: 2px solid black;
 
     div {
@@ -101,16 +101,19 @@ nav {
             font-family: Arial, Helvetica, sans-serif;
         }
         a {
+           
             display: inline-block;
             text-decoration: none;
-            background-color: grey;
             color: white;
             text-align: center;
-            font-size: 20px;
+            font-size: map-get($estilos, fsize)-5;
             border-bottom: solid black 2px;
-            width: 200px;
-            height: 30px;
+            @include tamaños(200px, 30px);
             margin: 10px;
+        }
+        @each $red, $color in $redes {
+            .#{$red} {
+            background-color: $color;}
         }
     }
 }
