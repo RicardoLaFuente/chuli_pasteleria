@@ -1,3 +1,10 @@
+@media screen and (max-width:991px) {
+    .footer {
+        height: 50vh;
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width:768px) {
     article {
         aside {
@@ -67,7 +74,7 @@
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 576px) {
 
     article {
         aside {
