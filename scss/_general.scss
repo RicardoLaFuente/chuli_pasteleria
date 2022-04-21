@@ -8,8 +8,7 @@
 }
 
 body {
-    background-image:
-        url(../imagenes/fondo\pagina.jpg);
+    background-image: url(../imagenes/fondopagina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -94,26 +93,42 @@ nav {
 .footer {
     background-color: map-get($estilos, color);
     border: 2px solid black;
+    height: 30vh;
+    font-size: map-get($estilos, fsize)-7;
 
     div {
-        h2 {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+        color: $colorblanco;
         a {
-           
-            display: inline-block;
             text-decoration: none;
             color: white;
             text-align: center;
-            font-size: map-get($estilos, fsize)-5;
-            border-bottom: solid black 2px;
             @include tamaños(200px, 30px);
             margin: 10px;
         }
-        @each $red, $color in $redes {
-            .#{$red} {
-            background-color: $color;}
+
+        h3 {
+            text-align: initial;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: map-get($estilos, fsize)-5;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: block;
+                text-decoration: none;
+                color: $colorblanco;
+                position: relative;
+            }
         }
     }
+    
+}
+.piePagina {
+    background-color: $colornegro;
+    color: $colorblanco;
+    font-size: 15px;
+    text-align: center;
 }

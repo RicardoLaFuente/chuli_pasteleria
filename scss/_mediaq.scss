@@ -56,6 +56,15 @@
     .contacto {
         font-size: 20px;
     }
+    .footer {
+        height: 50vh;
+        font-size: 15px;
+        div {
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 490px) {
@@ -116,5 +125,16 @@
         .contactoCartel {
             font-size: 15px;
         }
+    }
+    .footer {
+        height: 70vh;
+        div {
+            h3 {
+                font-size: 15px;
+            }
+        }
+    }
+    .piePagina {
+        font-size: 11px;
     }
 }

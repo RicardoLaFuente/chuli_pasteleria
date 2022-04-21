@@ -6,7 +6,7 @@
   --bs-gutter-x: 0; }
 
 body {
-  background-image: url(../imagenes/fondo\pagina.jpg);
+  background-image: url(../imagenes/fondopagina.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: auto; }
@@ -62,27 +62,37 @@ nav div .menuLetras {
     color: black; }
 
 .footer {
-  background-color: #0189897a;
-  border: 2px solid black; }
-  .footer div h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif; }
-  .footer div a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    border-bottom: solid black 2px;
-    width: 200px;
-    height: 30px;
-    margin: 10px; }
-  .footer div .facebook {
-    background-color: #1a6197; }
-  .footer div .whatsapp {
-    background-color: #25d366; }
-  .footer div .instagram {
-    background-color: #ee2233; }
+  background-color: #111111;
+  border: 2px solid black;
+  height: 30vh;
+  font-size: 18px; }
+  .footer div {
+    color: white; }
+    .footer div a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      width: 200px;
+      height: 30px;
+      margin: 10px; }
+    .footer div h3 {
+      text-align: initial;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 20px; }
+    .footer div ul {
+      list-style-type: none; }
+      .footer div ul li {
+        display: block;
+        text-decoration: none;
+        color: white;
+        position: relative; }
+
+.piePagina {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center; }
 
 main div div .destacadosLetra {
   font-size: 100px;
@@ -187,7 +197,12 @@ section ul img {
     height: 150px;
     padding: 10px; }
   .contacto, .contacto .contactoCartel {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .footer {
+    height: 50vh;
+    font-size: 15px; }
+    .footer div h3 {
+      font-size: 17px; } }
 
 @media screen and (max-width: 490px) {
   article aside .parrafoChuli {
@@ -212,4 +227,10 @@ section ul img {
   .contacto, .contacto .contactoCartel {
     font-size: 15px; }
     .contacto .contactoCartel {
-      font-size: 15px; } }
+      font-size: 15px; }
+  .footer {
+    height: 70vh; }
+    .footer div h3 {
+      font-size: 15px; }
+  .piePagina {
+    font-size: 11px; } }
