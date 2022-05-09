@@ -110,21 +110,22 @@ main div .imgCarrusel {
     height: 35rem; }
 
 article div h3 {
-  color: black;
+  color: darkcyan;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  text-shadow: 1px 1px grey; }
 
-article div .imgChuli {
+.imgChuli {
   width: 200px;
   margin-top: 5px;
   transition: all 3s;
   filter: grayscale(100%); }
-  article div .imgChuli:hover {
+  .imgChuli:hover {
     width: 300px;
     filter: none; }
 
-article aside .parrafoChuli {
+aside .parrafoChuli {
   color: darkcyan;
   border: 1px dotted black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -136,28 +137,49 @@ article aside .parrafoChuli {
   padding: 5px;
   margin: 25px 15px; }
 
+aside .parrafoDestacado {
+  text-shadow: 1px 1px grey;
+  font-size: 20px; }
+
+aside mark {
+  color: darkcyan;
+  background-color: rgba(73, 71, 71, 0.25); }
+
 section .textoCatalogo {
   font-family: fantasy;
   font-size: 50px;
   text-align: center;
   margin: 50px 0; }
 
-section ul li {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 35px;
-  margin: 40px 5px 20px 5px;
-  list-style: circle; }
-
-section ul img {
-  width: 300px;
-  height: 300px;
-  padding: 10px;
-  margin: 10px;
-  border: 1px dotted coral; }
+section ul {
+  padding: 0; }
+  section ul li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin: 40px 5px 20px 5px;
+    list-style: circle;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+  section ul img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px dotted coral; }
 
 .contacto, .contacto .contactoCartel {
   font-size: 20px;
   margin: 0px; }
+  .contacto div, .contacto .contactoCartel div {
+    text-align: center;
+    align-self: center; }
+    .contacto div iframe, .contacto .contactoCartel div iframe {
+      border: double 3px #5aa59f;
+      background-color: white;
+      padding: 7px; }
   .contacto h3, .contacto .contactoCartel h3 {
     font-size: 30px;
     font-style: italic;
@@ -178,7 +200,23 @@ section ul img {
 @media screen and (max-width: 991px) {
   .footer {
     height: 50vh;
-    font-size: 18px; } }
+    font-size: 18px; }
+  article div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    article div .imgChuli {
+      width: 300px;
+      margin-top: 5px;
+      transition: none;
+      filter: none; }
+      article div .imgChuli:hover {
+        width: 300px;
+        filter: none; }
+  .contacto div iframe, .contacto .contactoCartel div iframe {
+    width: 300px;
+    height: 200px; } }
 
 @media screen and (max-width: 768px) {
   article aside .parrafoChuli {
@@ -198,13 +236,13 @@ section ul img {
     font-family: cursive;
     color: black; }
   section ul img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     padding: 10px; }
   .contacto, .contacto .contactoCartel {
     font-size: 20px; }
   .footer {
-    height: 50vh;
+    height: 60vh;
     font-size: 15px; }
     .footer div h3 {
       font-size: 17px; } }
@@ -239,3 +277,7 @@ section ul img {
       font-size: 15px; }
   .piePagina {
     font-size: 11px; } }
+
+@media screen and (max-height: 400px) {
+  .footer {
+    height: 80vh; } }

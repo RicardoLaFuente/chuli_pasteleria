@@ -3,6 +3,38 @@
         height: 50vh;
         font-size: 18px;
     }
+
+    article {
+        div {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .imgChuli {
+                width: 300px;
+                margin-top: 5px;
+                transition: none;
+                filter: none;
+
+
+                &:hover {
+                    width: 300px;
+                    filter: none;
+                }
+            }
+        }
+    }
+
+    .contacto {
+        div {
+            iframe {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -12,6 +44,7 @@
                 font-size: 17px;
             }
         }
+
     }
 
 
@@ -53,7 +86,7 @@
     section {
         ul {
             img {
-                @include tamaños(150px, 150px);
+                @include tamaños(250px, 250px);
                 padding: 10px;
             }
         }
@@ -63,9 +96,11 @@
     .contacto {
         font-size: 20px;
     }
+
     .footer {
-        height: 50vh;
+        height: 60vh;
         font-size: 15px;
+
         div {
             h3 {
                 font-size: 17px;
@@ -133,15 +168,24 @@
             font-size: 15px;
         }
     }
+
     .footer {
         height: 70vh;
+
         div {
             h3 {
                 font-size: 15px;
             }
         }
     }
+
     .piePagina {
         font-size: 11px;
+    }
+}
+
+@media screen and (max-height:400px) {
+    .footer {
+        height: 80vh;
     }
 }

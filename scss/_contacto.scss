@@ -1,6 +1,16 @@
 .contacto {
     font-size: 20px;
     margin: 0px;
+    div {
+        text-align: center;
+        align-self: center;
+
+        iframe {
+            border: double 3px #5aa59f;
+            background-color: white;
+            padding: 7px;
+        }
+    }
 
     h3 {
         font-size: 30px;
