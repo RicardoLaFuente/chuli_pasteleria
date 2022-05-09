@@ -139,6 +139,9 @@ aside .parrafoChuli {
 
 aside .parrafoDestacado {
   text-shadow: 1px 1px grey;
+  font-size: 25px; }
+
+aside .parrafoDestacado2 {
   font-size: 20px; }
 
 aside mark {
